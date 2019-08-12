@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# coursier launch  -M scala.meta.cli.Metap org.scalameta:scalameta_2.11:4.1.9 -- "$@"
+
+set -x
+coursier launch  -M scala.meta.cli.Metap org.scalameta:scalameta_2.13:4.2.0 -- "$@"
+

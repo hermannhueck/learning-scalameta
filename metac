@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# coursier launch org.scalameta:metac_2.12.8:4.1.9 -- -cp $(coursier fetch -p org.scala-lang:scala-library:2.12.8) "$@"
+
+set -x
+coursier launch org.scalameta:metac_2.13.0:4.2.0 -- -cp $(coursier fetch -p org.scala-lang:scala-library:2.13.0) "$@"
