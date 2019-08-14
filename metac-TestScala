@@ -1,1 +1,2 @@
 ./metac -P:semanticdb:targetroot:./target/scala-2.13/classes src/main/scala/semanticdb/example/Test.scala
+
