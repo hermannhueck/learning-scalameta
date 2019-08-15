@@ -6,7 +6,7 @@ inThisBuild(Seq(
   scalaVersion := "2.13.0",
   publish / skip := true,
   libraryDependencies ++= Seq(
-    "org.scalameta" %% "scalameta" % "4.2.0",
+    "org.scalameta" %% "scalameta" % "4.2.0" withSources() withJavadoc(),
   ),
   scalacOptions ++= Seq(
     "-encoding", "UTF-8",     // source files are in UTF-8
