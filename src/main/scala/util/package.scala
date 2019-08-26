@@ -37,7 +37,7 @@ package object util {
       trees map { tree =>
         s"${asString(tree, indent)}"
       }
-      }.mkString(",")
+    }.mkString(",")
   }
 
   def label(labelOpt: Option[String]): String =
