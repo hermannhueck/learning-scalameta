@@ -6,7 +6,7 @@ inThisBuild(Seq(
   scalaVersion := "2.13.0",
   publish / skip := true,
   libraryDependencies ++= Seq(
-    "org.scalameta" %% "scalameta" % "4.2.1" withSources() withJavadoc(),
+    "org.scalameta" %% "scalameta" % "4.2.3" withSources() withJavadoc(),
   ),
   scalacOptions ++= Seq(
     "-encoding", "UTF-8",     // source files are in UTF-8
@@ -15,7 +15,7 @@ inThisBuild(Seq(
     "-feature",               // warn about misused language features
     // "-Ypartial-unification", // only 2.12
   ),
-  addCompilerPlugin("org.scalameta" % "semanticdb-scalac" % "4.2.0" cross CrossVersion.full),
+  addCompilerPlugin("org.scalameta" % "semanticdb-scalac" % "4.2.3" cross CrossVersion.full),
   compile / scalacOptions ++= Seq(
     "-Yrangepos",             // for semanticdb plugin; see: project/plugins.sbt
     "-Xlint",                 // enable handy linter warnings
