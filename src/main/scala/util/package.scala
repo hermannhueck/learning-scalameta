@@ -34,9 +34,7 @@ package object util {
     if (trees.isEmpty)
       s"\n${blanks(indent)}${label(lo)}Nil"
     else {
-      trees map { tree =>
-        s"${asString(tree, indent)}"
-      }
+      trees map { tree => s"${asString(tree, indent)}" }
     }.mkString(",")
   }
 
